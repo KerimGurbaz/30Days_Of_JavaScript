@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Day 3 : Exercises</h1>
+    <h3>Exercises: Level 2</h3>
+
+    <script>    
+    
+    // 1. Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).
+
+// Enter base: 20
+// Enter height: 10
+// The area of the triangle is 100
+
+    // let base = prompt("Enter base,please ?");
+    // let height =prompt("Enter height,please ?");
+    // let area =0.5 * base * height
+    // console.log(`The area of the triangle is : ${area}`);
+
+
+
+    // 2. Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)
+
+// Enter side a: 5
+// Enter side b: 4
+// Enter side c: 3
+// The perimeter of the triangle is 12
+
+// let side1 = parseInt(prompt("Please enter the first side ?"));
+// let side2 = parseInt(prompt("Please enter the second side ? "));
+// let side3 = parseInt(prompt("Please enter the third side ?"));
+
+// let perimeter = side1 + side2 + side3
+// console.log(`The perimeter of the triangle is ${perimeter}`)
+
+
+// 3. Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
+
+// let length_1 = parseInt(prompt("Please enter the length ? "))
+// let width_1 = parseInt(prompt("Please enter the width ? "))
+// let area_1 = length_1 * width_1
+// console.log(area_1);
+
+
+// 4.Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
+
+// const pi =3.14
+// let radius = prompt("Please, enter the radius ? ")
+// let circle_area = pi * radius ** 2
+// let circumference =2 * pi * radius
+// console.log(`Area of the circle : ${circle_area}`);
+// console.log(`circumference of the circle : ${circumference}`)
+
+
+
+// 5.Calculate the slope, x-intercept and y-intercept of y = 2x -2
+
+// let x = 0;
+// let y =0;
+// let x_intercept = (y+2)/2
+// let y_intercept = (2*0) -2
+// console.log(x_intercept)
+// console.log(y_intercept)
+
+
+// 6. Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
+
+let y2 = 10;
+let y1 = 2;
+let x2 = 6;
+let x1 = 2;
+
+let slope = (y2-y1)/(x2-x1);
+console.log(slope);
+
+
+// 7. Compare the slope of above two questions.
+
+// console.log(x_intercept === x1);
+// console.log(y_intercept === y1);
+
+
+// 8.Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
+
+let x3 = 2;
+let x4 = 3;
+let x5 = -3;
+
+let y = x5**2 + 6*x5 + 9
+console.log(y)
+
+
+
+// 9.Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
+// Enter hours: 40
+// Enter rate per hour: 28
+// Your weekly earning is 1120
+
+// let hours = prompt("Please, enter your hours ?");
+// let rate = prompt("Please enter your rate per hour ?");
+// let result = (hours * rate);
+// console.log(`Your weekly earning is ${result}`)
+
+
+
+// 10.If the length of your name is greater than 7 say, your name is long else say your name is short.
+
+// let name = prompt("Please enter your name ?");
+// name.length > 7 ? console.log(" your name is long. ") : console.log("your name is short.")
+
+
+// 11.Compare your first name length and your family name length and you should get this output.
+
+let firstName = 'Kerimmmmmm'
+let lastName = 'Gurbaz'
+{firstName.length > lastName.length ? console.log(`Your first name, ${firstName} is longer than your family name, ${lastName}`) : console.log(`Your last name, ${lastName} is longer than your first name, ${firstName}` )}
+
+
+
+// 12. Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
+
+let myAge = 34
+let yourAge = 61
+console.log(`Your age is ${yourAge-myAge} older than me`)
+
+
+// 13. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
+
+// let birtYear = prompt("Enter birt year, Please ?")
+// let age = 2022 - birtYear
+// age >= 18
+// ?console.log(`You are ${age}. You are old enough to drive.`)
+// :console.log(`You are ${age}. You will be allowed to drive after ${18-age} years.`);
+
+
+// 14.Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years 
+
+
+// Enter number of years you live: 100
+// You lived 3153600000 seconds.
+
+// let years = prompt("Enter number of years you live:");
+// console.log(`You lived ${years * 31536000}`) // 1 Year = 31536000 Seconds
+
+
+// 15. Create a human readable time format using the Date time object
+
+// YYYY-MM-DD HH:mm
+// DD-MM-YYYY HH:mm
+// DD/MM/YYYY HH:mm
+
+
+const readable_time = new Date()
+const year = readable_time.getFullYear()
+const month = readable_time.getMonth() + 1 //return month(0-11)
+const day = readable_time.getDate()
+const hours = readable_time.getHours()
+const minutes = readable_time.getMinutes()
+console.log(`${year}-${month}-${day} ${hours}:${minutes}`)
+
+
+
+
+
+</script>
+</body>
+</html>
