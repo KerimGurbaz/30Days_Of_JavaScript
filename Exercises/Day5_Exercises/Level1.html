@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercise: Level 1</h1>
+
+    <script>
+        // 1.Declare an empty array;
+
+        const arr1 = Array()
+        console.log(typeof(arr1));
+
+        const arr2 = new Array()
+        console.log(typeof(arr2));
+
+        const arr3 = []
+        console.log(typeof(arr3));
+
+
+    
+    //  2. Declare an array with more than 5 number of elements
+
+    const dec = [1,2,3,4,5]
+
+
+    // 3.Find the length of your array
+
+    console.log(dec.length);
+
+
+    // 4. Get the first item, the middle item and the last item of the array
+
+    let first = dec[0]
+    let middle = dec[parseInt(dec.length/2)]
+    let last= dec[dec.length - 1]
+
+    console.log(first);
+    console.log(middle);
+    console.log(last);
+
+
+    // 5.Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
+
+    let mixedDataTypes = ["Kerim", 34, 29.10, true , NaN, []]
+    console.log(mixedDataTypes.length);
+
+
+    // 6.Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
+
+    itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+
+
+    // 7.Print the array using console.log()
+
+    console.log(itCompanies);
+
+
+    // 8.Print the number of companies in the array
+
+    console.log(itCompanies.length);
+
+
+    // 9.Print the first company, middle and last company
+
+    let first1 = itCompanies[0]
+    let middle1 = itCompanies[parseInt(itCompanies.length/2)]
+    let last1= itCompanies[itCompanies.length - 1]
+
+    console.log(first1, middle1, last1)
+
+
+    // 10.Print out each company
+
+ 
+
+   for(let i = 0; i<itCompanies.length ; i++){
+       console.log(itCompanies[i]);
+   }
+
+
+//    11.Change each company name to uppercase one by one and print them out
+
+   for (let i = 0; i<itCompanies.length; i++){
+       console.log(itCompanies[i].toUpperCase());
+   }
+
+
+// 12.Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
+
+let firstPart = itCompanies.slice(0,6)
+let secondPart = itCompanies.indexOf("Amazon"); //amazon's index
+
+console.log(`${firstPart} and ${itCompanies[secondPart]} are big IT companies.`);
+
+
+
+// 13. Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
+
+// let companies =prompt("Please, enter your companies")
+// let index = itCompanies.indexOf(companies);
+// if(index==-1){
+//     console.log("This companies is not found");
+// } else{
+//     console.log(companies);
+// };
+
+
+
+// 14.Filter out companies which have more than one 'o' without the filter method
+
+let result =[]
+
+for(let i = 0; i<itCompanies.length ; i++){
+    if(itCompanies[i].indexOf("o") != itCompanies[i].lastIndexOf("o")){
+        result.push(itCompanies[i])
+    }
+}
+
+console.log(result);
+
+
+
+// 15.Sort the array using sort() method
+
+
+console.log(itCompanies.sort());
+
+
+// 16.Sort the array using sort() method
+
+console.log(itCompanies.reverse());
+
+
+
+// 17.Slice out the first 3 companies from the array
+
+console.log(itCompanies.slice(0,3));
+
+
+// 18. Slice out the last 3 companies from the array
+
+console.log(itCompanies.slice(itCompanies.length-3));
+
+
+// 19.Slice out the middle IT company or companies from the array
+
+if (itCompanies.length % 2){
+    console.log(itCompanies[parseInt(itCompanies.length/2)]);
+}else{
+    console.log(itCompanies.slice(parseInt(itCompanies.length/2 -1), parseInt(itCompanies.length/2 +1))) ;
+
+}
+
+
+
+let itCompanies2 =  ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"]
+
+
+if (itCompanies2.length % 2){
+    console.log(itCompanies2[parseInt(itCompanies2.length/2)]);
+   
+}else{
+    console.log(itCompanies2.slice(parseInt(itCompanies2.length/2 -1), parseInt(itCompanies2.length/2 +1))) ;
+    
+}
+
+
+
+// 20.Remove the first IT company from the array
+console.log(itCompanies.shift());
+console.log(itCompanies);
+
+
+
+// 21.Remove the middle IT company or companies from the array
+
+if (itCompanies.length % 2){
+    console.log(itCompanies.splice(parseInt(itCompanies.length/2)));
+}else{
+    console.log(itCompanies.splice(parseInt(itCompanies.length/2 -1), 2)) ;
+
+}
+
+
+// 22.Remove the last IT company from the array
+console.log(itCompanies.pop());
+console.log(itCompanies);
+
+
+
+// 23. Remove all IT companies
+
+let i =itCompanies.length
+while(i >0){
+    console.log(itCompanies.pop());
+    i--
+}
+console.log(itCompanies);
+
+    </script>
+</body>
+</html>
