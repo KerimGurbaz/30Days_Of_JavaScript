@@ -117,3 +117,95 @@ function sumArrayValues(arr) {
 const numbers = [1, 2, 3, 45];
 // calling a function
 console.log(sumArrayValues(numbers));
+
+
+
+// Function with unlimited number of parameters
+// Unlimited number of parameters in regular function
+
+function sumAllNums() {
+    let sum = 0
+    for (let i = 0; i < arguments.length; i++) {
+        sum += arguments[i]
+    }
+    return sum
+}
+console.log(sumAllNums(1, 2, 3, 4, 5)); // 15
+
+console.log(sumAllNums(10, 20)); // 30
+
+
+// Unlimited number of parameters in arrow function
+
+const sumAll = (...args) => {
+    console.log(args);
+}
+sumAll(1, 2, 3, 4)
+
+
+// function declaration
+
+const sumAllNumss = (...args) => {
+    let sum = 0
+    for (const element of args) {
+        sum += element
+    }
+    return sum
+}
+
+console.log(sumAllNumss(1, 2, 3, 4, 5));
+
+
+// Anonymous Function
+
+const anonymousFunc = function () {
+    console.log("Kerim Gurbaz");
+}
+anonymousFunc()
+
+
+// Expression Function
+
+const square1 = function (p) {
+    return p * p
+}
+console.log(square1(2));
+
+// Self Invoking Functions
+
+(function (n) {
+    console.log(n * n);
+})(22)
+
+
+let squareNum = (function (n) {
+    return n * n
+})(33)
+
+console.log(squareNum);
+
+
+// Arrow Function
+
+// Arrow function is an alternative to write a function, however function declaration and arrow function have some minor differences.
+
+const changeToUpperCase = arr => {
+    const newArr = []
+    for (const element of arr) {
+        newArr.push(element.toUpperCase())
+    }
+    return newArr
+}
+const countries = ["Swidzerland", "Turkey"]
+console.log(changeToUpperCase(countries));
+
+
+// Function with default parameters
+
+function greetings(name = "Peter") {
+    let message = `${name}, Welcome to 30 days of javascript!`
+    return message
+}
+
+console.log(greetings());
+console.log(greetings("KERIM"))
