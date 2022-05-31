@@ -45,3 +45,16 @@ function showDateTime() {
 }
 
 console.log(showDateTime());
+
+
+// 5. Declare a function name swapValues. This function swaps value of x to y.
+
+// swapValues(3, 4) // x => 4, y=>3
+// swapValues(4, 5) // x = 5, y = 4
+
+swapValues = (a, b) => {
+    let x = b
+    let y = a;
+    console.log(x, y);
+}
+swapValues(3, 4)
