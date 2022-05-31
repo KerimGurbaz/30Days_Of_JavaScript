@@ -58,3 +58,27 @@ swapValues = (a, b) => {
     console.log(x, y);
 }
 swapValues(3, 4)
+
+
+// 6. Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use method).
+
+let reverseArray = (array) => {
+    let newArray = []
+    for (let i = 0; i < array.length; i++) {
+        newArray.unshift(array[i])
+    }
+    return newArray
+}
+console.log(reverseArray([1, 2, 3, 4, 5]));
+
+
+solveQuadEquation;
+
+// reverseArr = (arr) => {
+//     let newArr = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         newArr.unshift(arr[i]);
+//     }
+//     console.log(newArr);
+// }
+// reverseArr([3, 4, 5])
