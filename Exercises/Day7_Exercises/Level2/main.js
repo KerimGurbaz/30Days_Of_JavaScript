@@ -245,3 +245,27 @@ generateRandomIp = () => {
 }
 console.log(generateRandomIp());
 
+
+// 16.Write a function which generates a randomMacAddress
+let mac = []
+generateMacAddress = () => {
+    let char = "0123456789ABCDEF"
+    let charSplit = char.split("");
+    let krm = []
+
+    for (let i = 0; i < 4; i++) {
+        for (ii = 0; ii < 2; ii++) {
+            let random = charSplit[Math.floor(Math.random() * (char.length))]
+            krm.push(random)
+            if (krm.length % 2 == 0) {
+                mac.push(krm)
+            }
+
+        }
+
+    }
+
+    return mac
+}
+
+console.log(...generateMacAddress());
