@@ -192,3 +192,78 @@ function findMax(a, b, c) {
     return Math.max(a, b, c)
 }
 console.log(findMax(2, 366, 98));
+
+// solution2
+
+generateRandomIp = () => {
+    let one = Math.floor(Math.random() * 256);
+    let two = Math.floor(Math.random() * 256);
+    let three = Math.floor(Math.random() * 256);
+    let four = Math.floor(Math.random() * 256);
+    return `IP: ${one}:${two}:${three}:${four}`
+}
+console.log(generateRandomIp());
+
+
+// 16.Write a function which generates a randomMacAddress
+let mac = []
+generateMacAddress = () => {
+    let char = "0123456789ABCDEF"
+    let charSplit = char.split("");
+    let krm = []
+
+    for (let i = 0; i < 4; i++) {
+        for (ii = 0; ii < 2; ii++) {
+            let random = charSplit[Math.floor(Math.random() * (char.length))]
+            krm.push(random)
+            if (krm.length % 2 == 0) {
+                mac.push(krm)
+            }
+        }
+    }
+    return mac
+}
+console.log(...generateMacAddress());
+
+//************************** */
+
+const kerim = (...args)=>{
+    console.log(args[4]);
+};
+
+kerim(1,2,3,4,5)
+
+const sumAllNum = (...args)=>{
+    let sum = 0
+    for(const element of args){
+        sum += element
+    }
+    return sum
+}
+
+console.log(sumAllNum(1,2,3,4,4,5))
+
+const anonymousFun = function(){
+    console.log("I am an anonymous fonction and my name is kerim");
+}
+
+console.log(anonymousFun());
+
+const square = function(n){
+    return n**3
+};
+console.log(square(-25));
+
+(function(n) {
+    console.log(n*n)
+})(10)
+
+// function zehra (n){
+//     return n+1
+// }
+
+// console.log(zehra(1));
+
+const zehra = (n)=> n+1;
+
+console.log(zehra(9))
