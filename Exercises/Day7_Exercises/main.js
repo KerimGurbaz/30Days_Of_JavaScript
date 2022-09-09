@@ -331,6 +331,68 @@ function showDateTime(){
 console.log(showDateTime());
 
 ------
+// 5-Declare a function name swapValues. This function swaps value of x to y.
+// swapValues(3, 4) // x => 4, y=>3
+// swapValues(4, 5) // x = 5, y = 4
 
+// solution1
+let a;
+let b;
+
+function swapValues1(a,b){
+    [a,b] = [b,a]
+    return `a => ${a}, b ${b} `
+}
+console.log(swapValues1(3,4))
+
+// solution2
+
+swapVal = (a,b)=>{
+    let x = b;
+    let y = a;
+    console.log(x,y);
+}
+swapVal(5,6)
+
+
+// Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use method).
+
+// console.log(reverseArray([1, 2, 3, 4, 5]))
+//[5, 4, 3, 2, 1]
+// console.log(reverseArray(['A', 'B', 'C']))
+//['C', 'B', 'A']
+let mylist = [35,"gurbaz", "kerim"]
+
+let reverseArray = (arr)=>{
+    let abc =[]
+for(let i = arr.length - 1 ; i>=0 ; i--){
+    abc.push(arr[i])
+}
+return abc
+}
+console.log(reverseArray([5,6,7]));
+console.log(reverseArray(mylist));
+
+const newlist = mylist.map(reverseArray)
+console.log(newlist);
+
+// Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
+
+
+let namess = ["Kerim","gurbaz"];
+let modifier = namess.map(function(element){
+    return element.toLocaleUpperCase();
+})
+
+console.log(modifier)
+
+let arr = [2, 3, 5, 7]
+
+arr.map(function(element, index, array){
+    console.log(element);
+    console.log(index);
+    console.log(array);
+    return element;
+}, 80);
 
 
