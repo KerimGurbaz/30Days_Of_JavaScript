@@ -396,3 +396,32 @@ arr.map(function(element, index, array){
 }, 80);
 
 
+// Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
+// let arr3 = [4,5,6,45,6,567,678,543,56,8,8,54,76]
+
+// let addItem2 = function(a){
+//     return arr3.push(a)
+// }
+
+// console.log(addItem2(11))
+// console.log(arr3);
+
+// Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
+let arr4 = [4,5,6,45,6,567,678,543,56,8,8,54,76]
+
+let removeItem1 = ((a)=>{
+  arr[a] ? console.log(arr4.splice(a,1)): console.log("Someting went wrong");
+  return arr4
+
+})
+
+removeItem1(1)
+
+// other solution
+
+removeItem =(index) =>{
+    let name = ["Kerim", "Gurbaz"]
+    name.splice(index)
+    return name
+}
+console.log(removeItem(1));
