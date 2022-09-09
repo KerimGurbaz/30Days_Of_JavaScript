@@ -318,4 +318,19 @@ function bay (a) {
 let ar =[1,2,3]
 
 console.log(bay(ar));
+----------------------
+let day1 = new Date();
+let myday = day1.getDate();
+let month = day1.getMonth();
+let year = day1.getFullYear();
+let hours = day1.getHours();
+let minute =day1.getMinutes()
+function showDateTime(){
+    return `${myday}/${month}/${year} ${hours}:${minute}`
+}
+console.log(showDateTime());
+
+------
+
+
 
