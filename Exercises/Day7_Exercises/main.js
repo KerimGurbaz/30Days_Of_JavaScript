@@ -267,3 +267,55 @@ console.log(square(-25));
 const zehra = (n)=> n+1;
 
 console.log(zehra(9))
+
+const changeToUpperCase = arr =>{
+    const newArr = []
+    for (const element of arr){
+        newArr.push(element.toUpperCase())
+    }
+    return newArr
+}
+
+console.log(changeToUpperCase(["kerim", "gurbaz"]));
+
+const printFullName =(firstName, lastNAme) =>{
+    return `${firstName} ${lastNAme}`
+}
+
+fullname = printFullName("Kerim", "Gurbaz")
+console.log(fullname)
+
+
+function functionName(param = "value"){
+    return `${param} degerdir.`
+}
+
+console.log(functionName());
+ 
+
+function greetings(name="kerim"){
+    let message =`hello ${name}`
+    return message
+
+
+
+}
+
+console.log(greetings())
+console.log(greetings("zehra"));
+
+// Exercises: Level 2
+
+// Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.
+
+
+
+
+function bay (a) {
+    return a
+}
+
+let ar =[1,2,3]
+
+console.log(bay(ar));
+
