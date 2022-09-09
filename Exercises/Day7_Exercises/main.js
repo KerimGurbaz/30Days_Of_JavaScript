@@ -424,4 +424,43 @@ removeItem =(index) =>{
     name.splice(index)
     return name
 }
+
+let sayi = 24
+
+  const rules = {
+    M: 1000,
+    CM: 900,
+    D: 500, 
+    CD: 400,
+    C: 100,
+    XC: 90,
+    L: 50,
+    XL: 40,
+    XXX: 30,
+    XX: 20,
+    X: 10,
+    IX: 9,
+    V: 5,
+    IV: 4,
+    I: 1,
+  };
+
+
+console.log(Object.values(rules))
+let result = "" ;
+for (let value of Object.entries(rules)){
+    while(sayi >= parseInt(value[1])){
+        sayi -= value;
+        console.log(sayi)
+    }
+//    console.log( Math.floor(sayi/value[1]);
+
+    console.log(typeof value[1])
+    console.log(value)
+
+}
+
+console.log(Object.entries(rules))
+
+
 console.log(removeItem(1));
