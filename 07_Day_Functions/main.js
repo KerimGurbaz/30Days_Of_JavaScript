@@ -19,6 +19,13 @@ function square() {
 
     console.log(sq);
 }
+
+function add(a+b){
+   return a+b
+}
+
+add(3+8)
+
 square() // 9  (calling function by its name and with parentheses)
 
 // function without parameter
