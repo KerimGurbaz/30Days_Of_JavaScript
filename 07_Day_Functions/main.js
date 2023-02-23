@@ -246,3 +246,22 @@ console.log(calculator(5, 3, "-")); // 2
 console.log(calculator(5, 3, "*")); // 15
 console.log(calculator(5, 3, "/")); // 1.6666666666666667
 console.log(calculator(5, 3, "%")); // "Geçersiz operator"
+
+
+Dizi elemanlarının toplamını hesaplayan bir fonksiyon:
+
+function sumArray(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+}
+
+console.log(sumArray([1, 2, 3, 4, 5])); // 15
+console.log(sumArray([10, 20, 30])); // 60
+console.log(sumArray([-1, 0, 1])); // 0
+
+
+
+
