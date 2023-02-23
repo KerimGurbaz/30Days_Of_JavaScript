@@ -216,3 +216,10 @@ function greetings(name = "Peter") {
 
 console.log(greetings());
 console.log(greetings("KERIM"))
+
+
+function sayHello(name) {
+  console.log("Merhaba " + name + "!");
+}
+
+sayHello("Ahmet"); // "Merhaba Ahmet!" yazdırır
