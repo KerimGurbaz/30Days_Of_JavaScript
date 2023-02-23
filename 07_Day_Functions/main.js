@@ -223,3 +223,26 @@ function sayHello(name) {
 }
 
 sayHello("Ahmet"); // "Merhaba Ahmet!" yazdırır
+
+
+Basit bir hesap makinesi fonksiyonu:
+
+function calculator(num1, num2, operator) {
+  if (operator === "+") {
+    return num1 + num2;
+  } else if (operator === "-") {
+    return num1 - num2;
+  } else if (operator === "*") {
+    return num1 * num2;
+  } else if (operator === "/") {
+    return num1 / num2;
+  } else {
+    return "Geçersiz operator";
+  }
+}
+
+console.log(calculator(5, 3, "+")); // 8
+console.log(calculator(5, 3, "-")); // 2
+console.log(calculator(5, 3, "*")); // 15
+console.log(calculator(5, 3, "/")); // 1.6666666666666667
+console.log(calculator(5, 3, "%")); // "Geçersiz operator"
