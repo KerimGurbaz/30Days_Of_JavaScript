@@ -149,6 +149,12 @@ const sumAll = (...args) => {
 }
 sumAll(1, 2, 3, 4)
 
+function sayHello() {
+    console.log("Hello Kerim");
+}
+sayHello()
+
+
 
 // function declaration
 
