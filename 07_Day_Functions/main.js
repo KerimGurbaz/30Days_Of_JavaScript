@@ -207,6 +207,14 @@ const countries = ["Swidzerland", "Turkey"]
 console.log(changeToUpperCase(countries));
 
 
+var myVar = 10;
+
+if (myVar > 5) {
+  console.log("myVar is greater than 5");
+} else {
+  console.log("myVar is less than or equal to 5");
+}
+
 // Function with default parameters
 
 function greetings(name = "Peter") {
