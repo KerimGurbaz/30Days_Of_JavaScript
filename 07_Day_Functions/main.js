@@ -294,3 +294,14 @@ console.log(factorial(1)); // 1
 console.log(factorial(5)); // 120
 console.log(factorial(10)); // 3628800
 
+
+function twoNumbers() {
+    let numOne = 4
+    let numTwo = 5
+    let total = numOne + numTwo
+    return total
+}
+console.log(twoNumbers());
+
+
+
