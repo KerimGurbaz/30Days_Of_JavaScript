@@ -240,3 +240,12 @@ const webTechs2= [
   
   webTechs2.sort()
   console.log(webTechs2)
+
+
+ var colors = [
+     "Red",
+     "Blue",
+     "Yellow"
+ ]; 
+
+ var colors = new Array("Red", "Blue", "Yellow"); 
