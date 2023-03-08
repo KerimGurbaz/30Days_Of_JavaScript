@@ -249,3 +249,6 @@ const webTechs2= [
  ]; 
 
  var colors = new Array("Red", "Blue", "Yellow"); 
+
+ var colors = ["Red", "Blue", "Yellow"]; 
+ var name = colors[0]; // red
