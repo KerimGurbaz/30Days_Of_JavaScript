@@ -1,5 +1,7 @@
 // Function Declaration
 
+//Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer. if no month parameter provided take the current month.
+
 // Let us see how to declare a function and how to call a function.
 
 function sayHello() {
