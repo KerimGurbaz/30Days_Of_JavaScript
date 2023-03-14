@@ -15,6 +15,16 @@ function checkSeason(month){
     else if(month == ("march" || "april" || "may")){
         alert("Spring");
     }
+    else if(month == ("june" || "july" || "august")){
+        alert("Summer");
+    }
+    else {
+        alert("You have not entered a valid month. Current season: " + currentMonth);
+    }
+}
+
+checkSeason(month);
+
 
 // Let us see how to declare a function and how to call a function.
 
