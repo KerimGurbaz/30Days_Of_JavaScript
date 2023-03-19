@@ -8,7 +8,13 @@ spinWords( "This is another test" )=> returns "This is rehtona test"
 function spinWords(string) {
   // Split the string into an array of words
   let words = string.split(' ');
-    
+      // Iterate over each word in the array
+  for (let i = 0; i < words.length; i++) {
+    // If the word has five or more letters, reverse it
+    if (words[i].length >= 5) {
+      words[i] = words[i].split('').reverse().join('');
+    }
+  }
     
     
 }
