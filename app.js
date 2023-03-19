@@ -15,7 +15,9 @@ function spinWords(string) {
       words[i] = words[i].split('').reverse().join('');
     }
   }
-    
+      // Join the array back into a string and return it
+  return words.join(' ');
+}
     
 }
 
