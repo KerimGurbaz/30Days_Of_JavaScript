@@ -5,6 +5,14 @@ spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw"
 spinWords( "This is a test") => returns "This is a test" 
 spinWords( "This is another test" )=> returns "This is rehtona test"
 
+function spinWords(string) {
+  // Split the string into an array of words
+  let words = string.split(' ');
+    
+    
+    
+}
+
 
 
 const myh2 = document.querySelector("#myh2")
